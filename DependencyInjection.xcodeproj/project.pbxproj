@@ -24,6 +24,7 @@
 		656AC0F027E3EEF00033C42F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		656AC0F327E3EEF00033C42F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		656AC0F527E3EEF00033C42F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656AC10027E4089E0033C42F /* PostMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PostMock.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,11 @@
 		656AC0E627E3EEED0033C42F /* DependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				656AC0FB27E4078A0033C42F /* Model */,
+				656AC0FF27E407D50033C42F /* View */,
+				656AC0FC27E407940033C42F /* ViewModel */,
+				656AC0FE27E407C70033C42F /* Mocks */,
+				656AC0FD27E407A90033C42F /* Provider */,
 				656AC0E727E3EEED0033C42F /* AppDelegate.swift */,
 				656AC0E927E3EEED0033C42F /* SceneDelegate.swift */,
 				656AC0EB27E3EEED0033C42F /* ViewController.swift */,
@@ -65,6 +71,42 @@
 				656AC0F527E3EEF00033C42F /* Info.plist */,
 			);
 			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		656AC0FB27E4078A0033C42F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		656AC0FC27E407940033C42F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		656AC0FD27E407A90033C42F /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		656AC0FE27E407C70033C42F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				656AC10027E4089E0033C42F /* PostMock.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		656AC0FF27E407D50033C42F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
