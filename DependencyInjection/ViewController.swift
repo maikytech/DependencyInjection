@@ -8,12 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBAction func openListPressed(_ sender: Any) {
+        let vc = PostsListViewController()
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
 

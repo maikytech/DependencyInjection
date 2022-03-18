@@ -13,6 +13,10 @@
 		656AC0EF27E3EEED0033C42F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656AC0ED27E3EEED0033C42F /* Main.storyboard */; };
 		656AC0F127E3EEF00033C42F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656AC0F027E3EEF00033C42F /* Assets.xcassets */; };
 		656AC0F427E3EEF00033C42F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656AC0F227E3EEF00033C42F /* LaunchScreen.storyboard */; };
+		656AC10227E4091B0033C42F /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC10127E4091B0033C42F /* PostsViewModel.swift */; };
+		656AC10427E409A90033C42F /* PostsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC10327E409A90033C42F /* PostsProvider.swift */; };
+		656AC10727E40A1E0033C42F /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC10527E40A1E0033C42F /* PostsListViewController.swift */; };
+		656AC10827E40A1E0033C42F /* PostsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656AC10627E40A1E0033C42F /* PostsListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		656AC0F327E3EEF00033C42F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		656AC0F527E3EEF00033C42F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656AC10027E4089E0033C42F /* PostMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PostMock.json; sourceTree = "<group>"; };
+		656AC10127E4091B0033C42F /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		656AC10327E409A90033C42F /* PostsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsProvider.swift; sourceTree = "<group>"; };
+		656AC10527E40A1E0033C42F /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
+		656AC10627E40A1E0033C42F /* PostsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 		656AC0FC27E407940033C42F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				656AC10127E4091B0033C42F /* PostsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -90,6 +99,7 @@
 		656AC0FD27E407A90033C42F /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				656AC10327E409A90033C42F /* PostsProvider.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -105,6 +115,8 @@
 		656AC0FF27E407D50033C42F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				656AC10527E40A1E0033C42F /* PostsListViewController.swift */,
+				656AC10627E40A1E0033C42F /* PostsListViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656AC10827E40A1E0033C42F /* PostsListViewController.xib in Resources */,
 				656AC0F427E3EEF00033C42F /* LaunchScreen.storyboard in Resources */,
 				656AC0F127E3EEF00033C42F /* Assets.xcassets in Resources */,
 				656AC0EF27E3EEED0033C42F /* Main.storyboard in Resources */,
@@ -180,6 +193,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656AC10427E409A90033C42F /* PostsProvider.swift in Sources */,
+				656AC10227E4091B0033C42F /* PostsViewModel.swift in Sources */,
+				656AC10727E40A1E0033C42F /* PostsListViewController.swift in Sources */,
 				656AC0EC27E3EEED0033C42F /* ViewController.swift in Sources */,
 				656AC0E827E3EEED0033C42F /* AppDelegate.swift in Sources */,
 				656AC0EA27E3EEED0033C42F /* SceneDelegate.swift in Sources */,
