@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBAction func openListPressed(_ sender: Any) {
         let vc = PostsListViewController()
         navigationController?.pushViewController(vc, animated: true)

@@ -13,6 +13,10 @@ class PostsListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityView: UIActivityIndicatorView!
     
+    //MARK: - Variables
+    private let viewModel = PostsViewModel()
+    private var postList: [PostModel] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +33,12 @@ class PostsListViewController: UIViewController {
     
     private func configureTableView () {
         tableView.dataSource = self
+        viewModel.getUserFromProvider { model in
+            DispatchQueue.main.async {
+                self.postList = model
+                self.tableView.reloadData()
+            }
+        }
         
     }
 }
@@ -36,11 +46,17 @@ class PostsListViewController: UIViewController {
 //MARK: - UITableViewDataSource
 extension PostsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return postList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let user = postList[indexPath.row]
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+        cell.textLabel?.text = user.title
+        cell.detailTextLabel?.text = user.body
+        
+        
+        
         return cell
     }
 }

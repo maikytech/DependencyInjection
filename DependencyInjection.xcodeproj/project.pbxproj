@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6511A16B27EA319D00AB79ED /* PostsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6511A16A27EA319D00AB79ED /* PostsMock.json */; };
+		651722EC27E4C66A00603A73 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651722EB27E4C66900603A73 /* EndPoint.swift */; };
+		651722EE27E4C89900603A73 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651722ED27E4C89900603A73 /* PostModel.swift */; };
 		656AC0E827E3EEED0033C42F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC0E727E3EEED0033C42F /* AppDelegate.swift */; };
 		656AC0EA27E3EEED0033C42F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC0E927E3EEED0033C42F /* SceneDelegate.swift */; };
 		656AC0EC27E3EEED0033C42F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC0EB27E3EEED0033C42F /* ViewController.swift */; };
@@ -17,9 +20,14 @@
 		656AC10427E409A90033C42F /* PostsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC10327E409A90033C42F /* PostsProvider.swift */; };
 		656AC10727E40A1E0033C42F /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC10527E40A1E0033C42F /* PostsListViewController.swift */; };
 		656AC10827E40A1E0033C42F /* PostsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656AC10627E40A1E0033C42F /* PostsListViewController.xib */; };
+		65C2840627E82D59002F3C42 /* PostProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2840527E82D59002F3C42 /* PostProviderMock.swift */; };
+		65C2840927E82DCF002F3C42 /* PostProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2840827E82DCF002F3C42 /* PostProviderProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6511A16A27EA319D00AB79ED /* PostsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PostsMock.json; sourceTree = "<group>"; };
+		651722EB27E4C66900603A73 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		651722ED27E4C89900603A73 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		656AC0E427E3EEED0033C42F /* DependencyInjection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DependencyInjection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656AC0E727E3EEED0033C42F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		656AC0E927E3EEED0033C42F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,11 +36,12 @@
 		656AC0F027E3EEF00033C42F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		656AC0F327E3EEF00033C42F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		656AC0F527E3EEF00033C42F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		656AC10027E4089E0033C42F /* PostMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PostMock.json; sourceTree = "<group>"; };
 		656AC10127E4091B0033C42F /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		656AC10327E409A90033C42F /* PostsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsProvider.swift; sourceTree = "<group>"; };
 		656AC10527E40A1E0033C42F /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
 		656AC10627E40A1E0033C42F /* PostsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsListViewController.xib; sourceTree = "<group>"; };
+		65C2840527E82D59002F3C42 /* PostProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProviderMock.swift; sourceTree = "<group>"; };
+		65C2840827E82DCF002F3C42 /* PostProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProviderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,7 @@
 		656AC0E627E3EEED0033C42F /* DependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				65C2840727E82DB5002F3C42 /* Protocols */,
 				656AC0FB27E4078A0033C42F /* Model */,
 				656AC0FF27E407D50033C42F /* View */,
 				656AC0FC27E407940033C42F /* ViewModel */,
@@ -72,8 +82,6 @@
 				656AC0FD27E407A90033C42F /* Provider */,
 				656AC0E727E3EEED0033C42F /* AppDelegate.swift */,
 				656AC0E927E3EEED0033C42F /* SceneDelegate.swift */,
-				656AC0EB27E3EEED0033C42F /* ViewController.swift */,
-				656AC0ED27E3EEED0033C42F /* Main.storyboard */,
 				656AC0F027E3EEF00033C42F /* Assets.xcassets */,
 				656AC0F227E3EEF00033C42F /* LaunchScreen.storyboard */,
 				656AC0F527E3EEF00033C42F /* Info.plist */,
@@ -84,6 +92,7 @@
 		656AC0FB27E4078A0033C42F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				651722ED27E4C89900603A73 /* PostModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				656AC10327E409A90033C42F /* PostsProvider.swift */,
+				65C2840527E82D59002F3C42 /* PostProviderMock.swift */,
+				651722EB27E4C66900603A73 /* EndPoint.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -107,7 +118,7 @@
 		656AC0FE27E407C70033C42F /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				656AC10027E4089E0033C42F /* PostMock.json */,
+				6511A16A27EA319D00AB79ED /* PostsMock.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -115,10 +126,20 @@
 		656AC0FF27E407D50033C42F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				656AC0EB27E3EEED0033C42F /* ViewController.swift */,
+				656AC0ED27E3EEED0033C42F /* Main.storyboard */,
 				656AC10527E40A1E0033C42F /* PostsListViewController.swift */,
 				656AC10627E40A1E0033C42F /* PostsListViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		65C2840727E82DB5002F3C42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				65C2840827E82DCF002F3C42 /* PostProviderProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +203,7 @@
 				656AC10827E40A1E0033C42F /* PostsListViewController.xib in Resources */,
 				656AC0F427E3EEF00033C42F /* LaunchScreen.storyboard in Resources */,
 				656AC0F127E3EEF00033C42F /* Assets.xcassets in Resources */,
+				6511A16B27EA319D00AB79ED /* PostsMock.json in Resources */,
 				656AC0EF27E3EEED0033C42F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,11 +215,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C2840927E82DCF002F3C42 /* PostProviderProtocol.swift in Sources */,
 				656AC10427E409A90033C42F /* PostsProvider.swift in Sources */,
+				651722EE27E4C89900603A73 /* PostModel.swift in Sources */,
 				656AC10227E4091B0033C42F /* PostsViewModel.swift in Sources */,
+				65C2840627E82D59002F3C42 /* PostProviderMock.swift in Sources */,
 				656AC10727E40A1E0033C42F /* PostsListViewController.swift in Sources */,
 				656AC0EC27E3EEED0033C42F /* ViewController.swift in Sources */,
 				656AC0E827E3EEED0033C42F /* AppDelegate.swift in Sources */,
+				651722EC27E4C66A00603A73 /* EndPoint.swift in Sources */,
 				656AC0EA27E3EEED0033C42F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
