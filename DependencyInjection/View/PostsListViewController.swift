@@ -22,8 +22,8 @@ class PostsListViewController: UIViewController {
         super.viewDidLoad()
         
         setupView()
+        activity(isHidden: false)
         configureTableView()
-        
     }
     
     //MARK: - Private Methods
@@ -33,13 +33,23 @@ class PostsListViewController: UIViewController {
     
     private func configureTableView () {
         tableView.dataSource = self
-        viewModel.getUserFromProvider { model in
+        viewModel.getUserFromProvider { [weak self] model in
             DispatchQueue.main.async {
-                self.postList = model
-                self.tableView.reloadData()
+                self?.activity(isHidden: true)
+                self?.postList = model
+                self?.tableView.reloadData()
             }
         }
+    }
+    
+    private func activity(isHidden: Bool) {
+        if isHidden {
+            activityView.stopAnimating()
+        }else {
+            activityView.startAnimating()
+        }
         
+        activityView.isHidden = isHidden
     }
 }
 
@@ -53,7 +63,9 @@ extension PostsListViewController: UITableViewDataSource {
         let user = postList[indexPath.row]
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
         cell.textLabel?.text = user.title
+        cell.textLabel?.numberOfLines = 0
         cell.detailTextLabel?.text = user.body
+        cell.detailTextLabel?.numberOfLines = 0
         
         
         
