@@ -12,8 +12,8 @@ final class PostsViewModel {
     
     //provider: PostProviderProtocol = PostsProvider() means Default Value
     init(provider: PostProviderProtocol = PostsProvider()) {
-        //self.provider = provider
-        self.provider = PostsProviderMock()
+        self.provider = provider
+        //self.provider = PostsProviderMock()
     }
     
     func getUserFromProvider(_ completion: @escaping ([PostModel]) -> Void ) {

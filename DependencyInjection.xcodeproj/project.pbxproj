@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6511A16B27EA319D00AB79ED /* PostsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6511A16A27EA319D00AB79ED /* PostsMock.json */; };
 		651722EC27E4C66A00603A73 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651722EB27E4C66900603A73 /* EndPoint.swift */; };
 		651722EE27E4C89900603A73 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651722ED27E4C89900603A73 /* PostModel.swift */; };
+		655A60E427EB70F900539D47 /* DependencyInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6511A17227EA791600AB79ED /* DependencyInjectionTests.swift */; };
 		656AC0E827E3EEED0033C42F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC0E727E3EEED0033C42F /* AppDelegate.swift */; };
 		656AC0EA27E3EEED0033C42F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC0E927E3EEED0033C42F /* SceneDelegate.swift */; };
 		656AC0EC27E3EEED0033C42F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AC0EB27E3EEED0033C42F /* ViewController.swift */; };
@@ -24,8 +25,20 @@
 		65C2840927E82DCF002F3C42 /* PostProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2840827E82DCF002F3C42 /* PostProviderProtocol.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6511A17427EA791600AB79ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 656AC0DC27E3EEED0033C42F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 656AC0E327E3EEED0033C42F;
+			remoteInfo = DependencyInjection;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6511A16A27EA319D00AB79ED /* PostsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PostsMock.json; sourceTree = "<group>"; };
+		6511A17027EA791600AB79ED /* DependencyInjectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DependencyInjectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6511A17227EA791600AB79ED /* DependencyInjectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionTests.swift; sourceTree = "<group>"; };
 		651722EB27E4C66900603A73 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		651722ED27E4C89900603A73 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		656AC0E427E3EEED0033C42F /* DependencyInjection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DependencyInjection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6511A16D27EA791600AB79ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		656AC0E127E3EEED0033C42F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,10 +75,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6511A17127EA791600AB79ED /* DependencyInjectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				6511A17227EA791600AB79ED /* DependencyInjectionTests.swift */,
+			);
+			path = DependencyInjectionTests;
+			sourceTree = "<group>";
+		};
 		656AC0DB27E3EEED0033C42F = {
 			isa = PBXGroup;
 			children = (
 				656AC0E627E3EEED0033C42F /* DependencyInjection */,
+				6511A17127EA791600AB79ED /* DependencyInjectionTests */,
 				656AC0E527E3EEED0033C42F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				656AC0E427E3EEED0033C42F /* DependencyInjection.app */,
+				6511A17027EA791600AB79ED /* DependencyInjectionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +175,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6511A16F27EA791600AB79ED /* DependencyInjectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6511A17627EA791600AB79ED /* Build configuration list for PBXNativeTarget "DependencyInjectionTests" */;
+			buildPhases = (
+				6511A16C27EA791600AB79ED /* Sources */,
+				6511A16D27EA791600AB79ED /* Frameworks */,
+				6511A16E27EA791600AB79ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6511A17527EA791600AB79ED /* PBXTargetDependency */,
+			);
+			name = DependencyInjectionTests;
+			productName = DependencyInjectionTests;
+			productReference = 6511A17027EA791600AB79ED /* DependencyInjectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		656AC0E327E3EEED0033C42F /* DependencyInjection */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 656AC0F827E3EEF00033C42F /* Build configuration list for PBXNativeTarget "DependencyInjection" */;
@@ -172,13 +220,17 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					6511A16F27EA791600AB79ED = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 656AC0E327E3EEED0033C42F;
+					};
 					656AC0E327E3EEED0033C42F = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
 			buildConfigurationList = 656AC0DF27E3EEED0033C42F /* Build configuration list for PBXProject "DependencyInjection" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -191,11 +243,19 @@
 			projectRoot = "";
 			targets = (
 				656AC0E327E3EEED0033C42F /* DependencyInjection */,
+				6511A16F27EA791600AB79ED /* DependencyInjectionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6511A16E27EA791600AB79ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		656AC0E227E3EEED0033C42F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +271,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6511A16C27EA791600AB79ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655A60E427EB70F900539D47 /* DependencyInjectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		656AC0E027E3EEED0033C42F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +297,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6511A17527EA791600AB79ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 656AC0E327E3EEED0033C42F /* DependencyInjection */;
+			targetProxy = 6511A17427EA791600AB79ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		656AC0ED27E3EEED0033C42F /* Main.storyboard */ = {
@@ -250,6 +326,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6511A17727EA791600AB79ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YR8ENK43BV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PosetoStudio.DependencyInjectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DependencyInjection.app/DependencyInjection";
+			};
+			name = Debug;
+		};
+		6511A17827EA791600AB79ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YR8ENK43BV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PosetoStudio.DependencyInjectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DependencyInjection.app/DependencyInjection";
+			};
+			name = Release;
+		};
 		656AC0F627E3EEF00033C42F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -425,6 +537,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6511A17627EA791600AB79ED /* Build configuration list for PBXNativeTarget "DependencyInjectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6511A17727EA791600AB79ED /* Debug */,
+				6511A17827EA791600AB79ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		656AC0DF27E3EEED0033C42F /* Build configuration list for PBXProject "DependencyInjection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
